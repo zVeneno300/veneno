@@ -1,0 +1,213 @@
+/* Reset some default styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile styles */
+.profile {
+    background: linear-gradient(135deg, #000000, #343d4c);
+    border-radius: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 650px;
+    margin: 50px auto;
+    border: 2px solid white; /* Adiciona uma borda branca */
+}
+
+.background-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('sit.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-top {
+    display: flex;
+    justify-content: center; /* Centering the content horizontally */
+    padding: 20px;
+    align-items: flex-start; /* Aligning items to the top */
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 70px;
+}
+
+.user-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-details h1 {
+    font-size: 18px;
+    color: #b360eb;
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    font-size: 16px;
+    color: #30ffcb;
+}
+
+.biography {
+    padding: 20px;
+    font-size: 16px;
+    color: #7db1f5;
+    text-align: right;
+}
+
+.biography h2 {
+    font-size: 16px;
+    color: #30ffcb;
+    margin-bottom: 10px;
+    margin-top: -350px; /* Adjust the margin here */
+}
+
+.iframe-container {
+    float: right;
+    margin-top: 30px; /* Ajuste essa margem conforme necessário */
+}
+
+.social-links {
+    background-color: #343d4c;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.social-link {
+    color: white;
+    margin: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centralize conteúdo verticalmente */
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 80px; /* Ajuste a largura do banner */
+    height: 40px; /* Ajuste a altura do banner */
+    text-align: center;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    max-width: 30px; /* Ajuste o tamanho das imagens */
+    max-height: 30px;
+    margin-bottom: 3px;
+}
+
+/* Social media specific styles */
+.social-link.youtube {
+    background-color: #690404; /* Red */
+}
+
+.social-link.twitter {
+    background-color: #21343f; /* Blue */
+}
+
+.social-link.instagram {
+    background: linear-gradient(135deg, #FFD700, #C13584);
+}
+
+
+
+.social-linkc.discord,
+.social-linkc.valorant {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 80px;
+    height: 50px; /* Defina a altura do banner aqui */
+    text-align: center;
+    position: relative;
+}
+
+.social-linkc.discord:hover::before,
+.social-linkc.valorant:hover::before {
+    content: attr(data-text);
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.social-linkc.discord:hover img,
+.social-linkc.valorant:hover img {
+    opacity: 0;
+}
+
+.social-linkc.discord:hover::before,
+.social-linkc.valorant:hover::before {
+    opacity: 1;
+}
+
+.social-linkc {
+    color: white;
+    margin: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 80px;
+    height: 50px; /* Defina a altura do banner aqui */
+    text-align: center;
+}
+
+.social-linkc:hover {
+    transform: scale(1.1);
+}
+
+.social-linkc img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 3px;
+}
+
+.social-linkc.discord {
+    background-color: #5765ec; /* Blue */
+}
+
+.social-linkc.valorant {
+    background-color: #101823; /* Red */
+}
+
+
+

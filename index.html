@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const customButtons = document.querySelectorAll(".social-linkc");
+        
+        customButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const buttonText = this.getAttribute("data-text");
+                copyToClipboard(buttonText);
+                this.classList.add("clicked");
+                setTimeout(() => {
+                    this.classList.remove("clicked");
+                }, 1500); // Reset after 1.5 seconds
+            });
+        });
+        
+        function copyToClipboard(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }
+    });</script>
+</head>
+<body>
+    <div class="background-banner"></div>
+    <div class="profile">
+        <div class="profile-banner">
+            <img src="ban.gif" alt="Banner do Perfil">
+        </div>
+        <div class="content-top">
+            <div class="playlist">
+                <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/0fh0y4GbJWAPOXrsRB6zOB?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="user-details">
+                <h1>Veneno🧪</h1>
+                <p>Programador</p>
+            </div>
+            <div class="avatar">
+                <img src="foto.jpg" alt="Avatar">
+            </div>
+        </div>
+        <div class="biography">
+            <h2></h2>
+            <p>15yㅤㅤㅤㅤㅤㅤ</p>
+            <p>infpㅤㅤㅤㅤㅤㅤ</p>
+            <p>estou aprendendo a Programarㅤ</p>
+            <p>java, python, html, css, js e tsㅤ</p>
+            <p>gosto de jogar valorant, minecraft</p>
+            <p>rocket league entre alguns outros</p>
+            <p>atualmente diamante 2 no valorant</p>
+            <p>amo doce, me deem doce pfvㅤ</p>
+
+            <div class="iframe-container">
+                <iframe src="https://tracker.gg/overlays/overlay/ac5bcbc4-9798-437e-89ec-22ea568f5d07" width="100%" height="85" frameBorder="0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://www.youtube.com/channel/UCGa29gUM3dMMyFe7mzdAfJg" class="social-link youtube">
+                <img src="youtube_logo.png" alt="Youtube">
+            </a>
+            <a href="https://twitter.com/venenovlr" class="social-link twitter">
+                <img src="twitter_logo.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/veneninhoo_/" class="social-link instagram">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <button class="social-linkc discord" data-text="vneno.">
+                <img src="discord_logo.png" alt="Discord">
+            </button>
+            <button class="social-linkc valorant" data-text="veneno#lost">
+                <img src="valorant_logo.png" alt="Valorant">
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
