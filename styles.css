@@ -1,10 +1,9 @@
-/* Reset some default styles */
+
 body, h1, h2, p, a {
     margin: 0;
     padding: 0;
 }
 
-/* Profile styles */
 .profile {
     background: linear-gradient(135deg, #000000, #343d4c);
     border-radius: 30px;
@@ -14,7 +13,7 @@ body, h1, h2, p, a {
     font-family: Arial, sans-serif;
     width: 650px;
     margin: 50px auto;
-    border: 2px solid white; /* Adiciona uma borda branca */
+    border: 2px solid white;
 }
 
 .background-banner {
@@ -37,9 +36,9 @@ body, h1, h2, p, a {
 
 .content-top {
     display: flex;
-    justify-content: center; /* Centering the content horizontally */
+    justify-content: center; 
     padding: 20px;
-    align-items: flex-start; /* Aligning items to the top */
+    align-items: flex-start; 
 }
 
 .avatar img {
@@ -78,12 +77,12 @@ body, h1, h2, p, a {
     font-size: 16px;
     color: #30ffcb;
     margin-bottom: 10px;
-    margin-top: -350px; /* Adjust the margin here */
+    margin-top: -350px; 
 }
 
 .iframe-container {
     float: right;
-    margin-top: 30px; /* Ajuste essa margem conforme necessário */
+    margin-top: 30px;
 }
 
 .social-links {
@@ -100,12 +99,12 @@ body, h1, h2, p, a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centralize conteúdo verticalmente */
+    justify-content: center; 
     border-radius: 5px;
     padding: 5px;
     transition: transform 0.2s ease-in-out;
-    width: 80px; /* Ajuste a largura do banner */
-    height: 40px; /* Ajuste a altura do banner */
+    width: 80px; 
+    height: 40px; 
     text-align: center;
 }
 
@@ -114,18 +113,18 @@ body, h1, h2, p, a {
 }
 
 .social-link img {
-    max-width: 30px; /* Ajuste o tamanho das imagens */
+    max-width: 30px; 
     max-height: 30px;
     margin-bottom: 3px;
 }
 
-/* Social media specific styles */
+
 .social-link.youtube {
-    background-color: #690404; /* Red */
+    background-color: #690404;
 }
 
 .social-link.twitter {
-    background-color: #21343f; /* Blue */
+    background-color: #21343f; 
 }
 
 .social-link.instagram {
@@ -147,7 +146,7 @@ body, h1, h2, p, a {
     padding: 5px;
     transition: transform 0.2s ease-in-out;
     width: 80px;
-    height: 50px; /* Defina a altura do banner aqui */
+    height: 50px; 
     text-align: center;
     position: relative;
 }
@@ -187,7 +186,7 @@ body, h1, h2, p, a {
     padding: 5px;
     transition: transform 0.2s ease-in-out;
     width: 80px;
-    height: 50px; /* Defina a altura do banner aqui */
+    height: 50px; 
     text-align: center;
 }
 
@@ -202,11 +201,11 @@ body, h1, h2, p, a {
 }
 
 .social-linkc.discord {
-    background-color: #5765ec; /* Blue */
+    background-color: #5765ec; 
 }
 
 .social-linkc.valorant {
-    background-color: #101823; /* Red */
+    background-color: #101823;
 }
 
 
