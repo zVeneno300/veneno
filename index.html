@@ -6,28 +6,33 @@
     <title>Meu Perfil</title>
     <link rel="stylesheet" href="styles.css">
     <script>document.addEventListener("DOMContentLoaded", function() {
-        const customButtons = document.querySelectorAll(".social-linkc");
-        
-        customButtons.forEach(button => {
-            button.addEventListener("click", function() {
-                const buttonText = this.getAttribute("data-text");
-                copyToClipboard(buttonText);
-                this.classList.add("clicked");
-                setTimeout(() => {
-                    this.classList.remove("clicked");
-                }, 1500); // Reset after 1.5 seconds
-            });
+    const customButtons = document.querySelectorAll(".social-linkc");
+
+    customButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const buttonText = this.getAttribute("data-text");
+            copyToClipboard(buttonText);
+            showCopiedMessage(this);
         });
-        
-        function copyToClipboard(text) {
-            const textarea = document.createElement("textarea");
-            textarea.value = text;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textarea);
-        }
-    });</script>
+    });
+
+    function copyToClipboard(text) {
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+    }
+
+    function showCopiedMessage(button) {
+        const originalText = button.innerHTML;
+        button.innerHTML = "Copiado!";
+        setTimeout(() => {
+            button.innerHTML = originalText;
+        }, 1000); // Mostrar "Copiado!" por 1 segundo
+    }
+});</script>
 </head>
 <body>
     <div class="background-banner"></div>
